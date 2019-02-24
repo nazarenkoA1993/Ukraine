@@ -1,0 +1,178 @@
+body {
+    margin: 0; /* убираем все отступы */
+    padding: 0; /* убираем все отступы */
+    max-width: 100%; /* адаптивная верстка */
+    background-color: mediumslateblue;
+}
+
+.menu_1 a, .memu_2 a {
+    text-decoration: none; /* Убрал подчеркивание с сылок */
+    color: darkblue;
+    margin: 0 15px;
+}
+
+.menu_1 {
+    text-align: right;
+    background-color: #FFD445;
+    height: 40px;
+    padding-top: 10px; /* убрал отступы с верху с Login'a and Register'a и фоновый цвет остался на всю ширину страницы */
+}
+
+.img {
+    background: url("../img/fon1.jpg");
+    width: 100%; /* сделал картинку на всю ширину страницы */
+    height: auto; /* сделал картинку на всю ширину страницы */
+    display: block; /* убираем отступ под картинкой */
+}
+
+#Urkaine { /* Пишем текст по верх картинки */
+    display: inline-block; /* нам нужен, чтобы контейнер не растягивался по ширине на всю страницу. */
+    position: absolute; /* заставляет все вложенные блоки с position:absolute вести отсчёт координат своего положения не от окна браузера, а от блока .img */
+    top: 300px;
+    left: 200px;
+    /* Оформление текста */
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bolder; /* Жирный текст */
+    /* Фон */
+    background-color: mediumslateblue;
+    padding: 10px 30px;
+    border-radius: 30px 0;
+}
+
+#nativ {
+    display: inline-block; /* нам нужен, чтобы контейнер не растягивался по ширине на всю страницу. */
+    position: absolute; /* заставляет все вложенные блоки с position:absolute вести отсчёт координат своего положения не от окна браузера, а от блока .img */
+    top: 800px;
+    right: 15px;
+    /* Оформление текста */
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: bolder; /* Жирный текст */
+    /* Фон */
+    background-color: #FFD445;
+    padding: 5px 30px;
+    border-radius: 30px 0;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+    display: inline; /* делаем горизонтальное меню */
+}
+
+ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+.memu_2 {
+    text-align: left;
+    background-color: mediumslateblue;
+    height: 50px;
+    padding-top: 10px; /* убрал отступы с верху с Login'a and Register'a и фоновый цвет остался на всю ширину страницы */
+}
+
+a:link {
+
+    padding: 10px; /* Поля вокруг текста */
+}
+
+a:hover {
+    background: #97A1FF; /* Цвет фона под ссылкой */
+}
+
+hr {
+    color: #3C34CB;
+    margin: 0;
+}
+
+/* вертикальная линия */
+.vline {
+    border-right: 1px solid #3C34CB;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+}
+
+#left {
+    width: 300px; /* Ширина левой колонки */
+    float: left;
+}
+
+/* кнопка */
+#submit {
+    background-color: #FFD445;
+    padding: 5px 5px;
+    margin-left: 130px;
+}
+
+/* фон заголовков и закругление его */
+.news, h4 {
+    background-color: #FFD445;
+    color: darkblue;
+    padding: 5px 10px;
+    border-radius: 15px 0 0;
+    text-align: center;
+}
+
+.name, .question, .email {
+    font-style: oblique; /* делаем курсывный текст */
+}
+
+/* линия под заголовком */
+.news1 {
+    border-bottom: 1px solid darkblue;
+    margin: 10px;
+}
+
+/* оформления первой буквы с помощью CSS параметра first letter */
+.news1::first-letter {
+    font-weight: bolder;
+}
+
+#right {
+    width: 300px; /* Ширина правой колонки */
+    float: right;
+}
+
+h4 {
+    border-radius: 0 15px 0 0;
+}
+
+p, dd {
+    font-size: 0.9em;
+}
+
+/* вертикальная линия с левой стороны */
+.r_vline {
+    border-left: 1px solid #3C34CB;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+}
+
+#center {
+    margin: 0 300px 0 300px; /* Отступ на ширину левой и правой колонки*/
+}
+
+h3, p {
+    padding: 20px 30px;
+}
+
+h3 {
+    color: #FFD445;
+}
+
+.images {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+footer {
+    background-color: #5552C5;
+    text-align: center;
+    height: 50px;
+    padding: 40px;
+}
